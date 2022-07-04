@@ -16,7 +16,7 @@ module "gcp-functions" {
 
 policy "enforce-mandatory-labels" {
     source = "./enforce-mandatory-labels.sentinel"
-    enforcement_level = "hard mandatory"
+    enforcement_level = "hard-mandatory"
 }
 
 #policy "restrict-egress-firewall-destination-ranges" {
@@ -26,7 +26,7 @@ policy "enforce-mandatory-labels" {
 
 policy "restrict-gce-machine-type" {
     source = "./restrict-gce-machine-type.sentinel"
-    enforcement_level = "hard mandatory"
+    enforcement_level = "hard-mandatory"
 }
 
 #policy "restrict-gke-clusters" {
@@ -36,5 +36,5 @@ policy "restrict-gce-machine-type" {
 
 policy "restrict-ingress-firewall-source-ranges" {
     source = "./restrict-ingress-firewall-source-ranges.sentinel"
-    enforcement_level = "hard mandatory"
+    enforcement_level = "hard-mandatory"
 }
