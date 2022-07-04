@@ -16,7 +16,7 @@ module "gcp-functions" {
 
 policy "enforce-mandatory-labels" {
     source = "./enforce-mandatory-labels.sentinel"
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
 }
 
 #policy "restrict-egress-firewall-destination-ranges" {
