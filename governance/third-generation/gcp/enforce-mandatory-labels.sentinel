@@ -18,9 +18,9 @@ param resource_types default [
 
 # List of mandatory labels
 param mandatory_labels default [
-  "name",
-  "ttl",
-  "owner",
+  "department",
+  "billing",
+  "BU",
 ]
 
 # Get all GCP Resources with standard labels
